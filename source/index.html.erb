@@ -1,10 +1,19 @@
 ---
-title: Welcome to Middleman
+title: Trading Cards
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<h1><%= current_page.data.title %></h1>
+
+<p class="lead">This project is a Middleman site that helps you generate and host your project's product vision and research. Namely stuff like personas, sitemaps etc.</p>
+
+<% content_for :sidebar_right do %>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Cards</h3>
+  </div>
+  
+  <ul class="list-group">
+    <li class="list-group-item">...</li>
+  </ul>
+</div>
+<% end %>
